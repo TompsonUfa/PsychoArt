@@ -7,6 +7,26 @@ body {
   font-weight: 500;
   color: #fff;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+img,
+li {
+  -khtml-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+img {
+  pointer-events: none;
+}
 .header {
   max-width: 1197px;
   margin: 0 auto;
