@@ -10,7 +10,7 @@
   </head>
   <body>
     <header class="header">
-      <a href="#" class="header__logo">Psycho<span>Art</span></a>
+      <a href="/" class="header__logo">Psycho<span>Art</span></a>
       <div class="form">
         <button class="form__button"></button>
         <input
@@ -22,28 +22,33 @@
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__item">
-            <a href="#" class="header__link">Collections</a>
+            <a href="#section-collections" class="header__link nav-link"
+              >Collections</a
+            >
           </li>
           <li class="header__item">
-            <a href="#" class="header__link">Feature</a>
+            <a href="#section-feature" class="header__link nav-link">Feature</a>
           </li>
           <li class="header__item">
-            <a href="#" class="header__link">FAQ</a>
+            <a href="#section-faq" class="header__link nav-link">FAQ</a>
           </li>
           <li class="header__item">
-            <a href="#" class="header__link header__link_gradient"
+            <a
+              href="#banner"
+              class="header__link header__link_gradient nav-link"
               >Select Wallet</a
             >
           </li>
         </ul>
       </nav>
       <div class="header__buttons">
-        <button class="header__search"></button>
-        <button class="header__menu"></button>
+        <button class="header__menu">
+          <span></span>
+        </button>
       </div>
     </header>
     <div class="container">
-      <section>
+      <section id="section-collections">
         <div class="main">
           <div class="main__text">
             <h1 class="main__title">
@@ -89,7 +94,7 @@
           />
         </div>
       </section>
-      <section>
+      <section id="section-feature">
         <h2 class="title">Featured Artworks</h2>
         <p class="desc">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore quia
@@ -143,7 +148,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="section-faq">
         <h2 class="title">Freaquently Asked Question</h2>
         <p class="desc">Wanna Ask Something?</p>
         <div class="faq">
@@ -189,12 +194,44 @@
           </div>
         </div>
       </section>
-      <div class="banner">
+      <div class="banner" id="banner">
         <h3 class="baneer__title">Get ready to collect our NFT</h3>
         <a href="#" class="banner__link">Get Started</a>
       </div>
     </div>
+    <div class="mobile-modal">
+      <div class="mobile-modal__form">
+        <button class="mobile-modal__button"></button>
+        <input
+          class="mobile-modal__input"
+          type="search"
+          placeholder="Search items and collections"
+        />
+      </div>
+      <ul class="mobile-modal__list">
+        <li class="mobile-modal__item">
+          <a href="#section-collections" class="mobile-modal__link nav-link"
+            >Collections</a
+          >
+        </li>
+        <li class="mobile-modal__item">
+          <a href="#section-feature" class="mobile-modal__link nav-link"
+            >Feature</a
+          >
+        </li>
+        <li class="mobile-modal__item">
+          <a href="#section-faq" class="mobile-modal__link nav-link">FAQ</a>
+        </li>
+        <li class="mobile-modal__item">
+          <a href="#banner" class="mobile-modal__link nav-link"
+            >Select Wallet</a
+          >
+        </li>
+      </ul>
+    </div>
+    <script src="js/scroll.js"></script>
     <script src="js/counter.js"></script>
+    <script src="js/mobile-menu.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
